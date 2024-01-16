@@ -1,0 +1,38 @@
+main{
+    display: flex;
+}
+
+#canchaFoto{
+    width: 384px;
+}
+
+#CanchaCalendario{
+    display: flex;
+}
+
+#calificacionCancha{
+    width: 700px;
+}
+
+.user{
+    width: 25px;
+}
+
+#Descripcion{
+    width: 400px;
+}
+
+#horas{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#horario{
+    display: flex;
+}
+
+#AceptarCancelar{
+    display: flex;
+    justify-content: space-around;
+}
