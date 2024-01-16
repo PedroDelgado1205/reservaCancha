@@ -1,0 +1,27 @@
+<main id="contenedorlogin">
+    <section id="CanchaCalendario">
+        <div id="calendario">
+            <app-celndario></app-celndario>
+        </div>
+        <div id="CanchaDescripcion">
+            <div id="Cancha">
+                <img id="canchaFoto" src="https://donpotrero.com/img/posts/2/medidas_lg.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section id="login">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Usuario</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div id="Btns">
+            <button (click)="navigateToOtroComponent()" type="button" class="btn btn-success">Ingresar</button>
+            <a href="">Registrarse</a>
+        </div>
+    </section>
+</main>
