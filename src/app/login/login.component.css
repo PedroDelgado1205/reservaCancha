@@ -1,33 +1,23 @@
-#contenedorlogin{
+.container.mt-5{
+    padding-top: 50px;
+}
+
+.cd{
     display: flex;
-    padding: 40px;
 }
 
-#CanchaCalendario{
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
+.card{
+    margin-top: 100px;
 }
 
-#calendario{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#canchaFoto{
-    width: 70%;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#login{
-    width: 30%;
-    padding: 10px;
-}
-
-#Btns{
+.card-body{
     display: flex;
     flex-direction: column;
-    padding: auto;
+    justify-content: center;
+}
+
+#btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

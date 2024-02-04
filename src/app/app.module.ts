@@ -12,6 +12,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CelndarioComponent } from './celndario/celndario.component';
 import { ReservaComponent } from './reserva/reserva.component';
+import { EstrellasComponent } from './estrellas/estrellas.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReservaComponent } from './reserva/reserva.component';
     InicioComponent,
     SidebarComponent,
     CelndarioComponent,
-    ReservaComponent
+    ReservaComponent,
+    EstrellasComponent
   ],
   imports: [
     BrowserAnimationsModule,

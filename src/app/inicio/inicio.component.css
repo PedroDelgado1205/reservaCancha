@@ -1,47 +1,65 @@
-#form {
-    width: 200px;
-    margin: 0 auto;
-    height: 50px;
+
+.container {
+    padding: 20px;
 }
 
-#form p {
-    text-align: center;
+.cancha-section {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-#form label {
-    font-size: 100px;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-label {
-    color: grey;
-}
-
-.clasificacion {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-}
-
-label:hover,
-label:hover ~ label {
-    color: orange;
-}
-
-input[type="radio"]:checked ~ label {
-    color: orange;
-}
-
-img{
-    width: 300px;
-}
-
-.user{
-    width: 25px;
-}
-
-#ComentariosCancha{
+.cancha-info {
     display: flex;
+    align-items: center;
+}
+
+#calendario {
+    margin-right: 20px; 
+}
+
+#comentarios {
+    flex: 1;
+}
+
+#canchaFoto{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.estrellas {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+img.user {
+    width: 20px;
+}
+
+#btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btns button {
+    margin-bottom: 10px;
+}
+
+#descripcion{
+    width: 300px;
+    height: auto;
+}
+
+#comentarioUser{
+    margin: 15px;
+}
+
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
 }

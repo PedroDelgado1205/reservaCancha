@@ -1,7 +1,17 @@
-img{
-    width: 20px;
+.form-inline{
+    display: flex;
+}
+
+.user{
+    width: 25px;
 }
 
 input{
     width: 1000px;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }

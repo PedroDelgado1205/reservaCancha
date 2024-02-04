@@ -5,6 +5,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ReservaComponent } from './reserva/reserva.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'reserva', component: ReservaComponent }
