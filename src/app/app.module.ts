@@ -9,10 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { CelndarioComponent } from './celndario/celndario.component';
 import { ReservaComponent } from './reserva/reserva.component';
-import { EstrellasComponent } from './estrellas/estrellas.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +18,8 @@ import { EstrellasComponent } from './estrellas/estrellas.component';
     LoginComponent,
     NavbarComponent,
     InicioComponent,
-    SidebarComponent,
     CelndarioComponent,
-    ReservaComponent,
-    EstrellasComponent
+    ReservaComponent
   ],
   imports: [
     BrowserAnimationsModule,

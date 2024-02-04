@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CalendarEvent, CalendarMonthViewDay } from 'angular-calendar';
 import { subDays, startOfDay, addDays } from 'date-fns';
+import { CanchasService } from '../canchas.service';
 
 
 @Component({
@@ -11,9 +12,12 @@ import { subDays, startOfDay, addDays } from 'date-fns';
 })
 
 export class LoginComponent {
-  constructor(private router: Router) {}
+  canchas!: any[];
 
-  navigateToOtroComponent(): void {
-    this.router.navigate(['/inicio']);
+  constructor(private router: Router, private canchasSercice: CanchasService) {}
+
+
+  ngOnInit() {
+    this.canchas = this.canchasSercice.getCanchas();
   }
 }

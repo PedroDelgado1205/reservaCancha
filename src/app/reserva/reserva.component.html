@@ -1,61 +1,59 @@
 <app-navbar></app-navbar>
 <main>
-    <section>
-        <section id="CanchaCalendario">
-            <app-celndario></app-celndario>
-            <div id="Cancha">
-                <img id="canchaFoto" src="https://donpotrero.com/img/posts/2/medidas_lg.jpg" alt="">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="cancha-info">
+                <div id="cc">
+                    <app-celndario></app-celndario>
+                <div id="Cancha">
+                    <img id="canchaFoto" [src]="canchas[i].imagen" alt="{{ canchas[i].titulo }}">
+                </div>
+                </div>
+                <div class="Comentarios" *ngFor="let comentario of canchas[i].comentarios">
+                    <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="Avatar de usuario">
+                    {{ comentario }}
+                </div>
+                <div class="estrellas">
+                    <form id="form">
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                    </form>
+                </div>
             </div>
-        </section>
-        <section id="calificacionCancha">
-            <div class="Comentarios">
-                <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque itaque culpa. Vel beatae ex ut voluptatibus corporis rem modi, illo voluptas dolore! Commodi aut eum autem modi, enim tempore.
+        </div>
+        <div class="col-md-6 descripcion-btns">
+            <h6>{{ canchas[i].titulo }}</h6>
+            <div id="db">
+                <div class="descripcion-section">
+                    <p id="descripcionCancha">
+                        {{ canchas[i].descripcion }}
+                    </p>
+                </div>
+                <div id="horario">
+                    <button type="button" class="btn btn-success">07:00 - 09:00</button>
+                    <button type="button" class="btn btn-success">10:00 - 13:00</button>
+                    <button type="button" class="btn btn-success">14:00 - 16:00</button>
+                    <button type="button" class="btn btn-success">17:00 - 19:00</button>
+                    <button type="button" class="btn btn-success">20:00 - 22:00</button>
+                </div>
             </div>
-            <div class="Comentarios">
-                <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque itaque culpa. Vel beatae ex ut voluptatibus corporis rem modi, illo voluptas dolore! Commodi aut eum autem modi, enim tempore.
+            <div class="selected-info">
+                <p>La cancha está seleccionada para el día ---- del mes ---- en el horario de --:-- a --:--</p>
             </div>
-            <div class="Comentarios">
-                <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque itaque culpa. Vel beatae ex ut voluptatibus corporis rem modi, illo voluptas dolore! Commodi aut eum autem modi, enim tempore.
-            </div>
-            <div class="Comentarios">
-                <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque itaque culpa. Vel beatae ex ut voluptatibus corporis rem modi, illo voluptas dolore! Commodi aut eum autem modi, enim tempore.
-            </div>
-            <div class="Comentarios">
-                <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque itaque culpa. Vel beatae ex ut voluptatibus corporis rem modi, illo voluptas dolore! Commodi aut eum autem modi, enim tempore.
-            </div>
-            <div class="Comentarios">
-                <img class="user" src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque itaque culpa. Vel beatae ex ut voluptatibus corporis rem modi, illo voluptas dolore! Commodi aut eum autem modi, enim tempore.
-            </div>
-        </section>
-    </section>
-    <section>
-        <section id="horario">
-            <section id="Descripcion">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ea praesentium dolorum esse quisquam quia deleniti? Numquam, ducimus atque odio aspernatur optio repellat, sapiente facilis sequi nesciunt, molestias fuga magni quos voluptatum quidem maxime autem est tenetur fugiat? Quibusdam neque voluptas, molestiae debitis officia ad tenetur praesentium ex pariatur maxime!
-            </section>
-            <section id="horas">
-                <button type="button" class="btn btn-success">07:00 - 09:00</button>
-                <button type="button" class="btn btn-success">10:00 - 13:00</button>
-                <button type="button" class="btn btn-success">14:00 - 16:00</button>
-                <button type="button" class="btn btn-success">17:00 - 19:00</button>
-                <button type="button" class="btn btn-success">20:00 - 22:00</button>
-            </section>
-        </section>
-        <section>
-            <hr>
-            <div>la cancha esta seleccionada para el dia -- del mes ---- en el horario de --:-- - --:--</div>
-            <hr>
-            <section id="AceptarCancelar">
+            <div class="botones-aceptar-cancelar">
                 <button type="button" class="btn btn-success">Aceptar</button>
-                <button type="button" class="btn btn-success" disabled>Cancelar</button>
-            </section>
-        </section>
-    </section>
+                <button type="button" class="btn btn-danger" disabled>Cancelar</button>
+            </div>
+        </div>
+    </div>
 </main>
-<!-- <app-sidebar></app-sidebar> -->
