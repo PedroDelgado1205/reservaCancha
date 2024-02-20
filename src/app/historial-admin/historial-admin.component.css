@@ -1,0 +1,32 @@
+img{
+    width: 150px;
+}
+
+.descripcion{
+    width: 150px;
+}
+
+p{
+    font-size: 15px;
+}
+
+button{
+    border: 0cap;
+}
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cont{
+    border: 1px lightgray  solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.row{
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    width: 100%;
+}

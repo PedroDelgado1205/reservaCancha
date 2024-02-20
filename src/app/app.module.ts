@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CelndarioComponent } from './celndario/celndario.component';
 import { ReservaComponent } from './reserva/reserva.component';
+import { HistorialComponent } from './historial/historial.component';
+import { HistorialAdminComponent } from './historial-admin/historial-admin.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ReservaComponent } from './reserva/reserva.component';
     NavbarComponent,
     InicioComponent,
     CelndarioComponent,
-    ReservaComponent
+    ReservaComponent,
+    HistorialComponent,
+    HistorialAdminComponent
   ],
   imports: [
     BrowserAnimationsModule,

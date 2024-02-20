@@ -1,0 +1,35 @@
+img{
+    width: 300px;
+}
+
+.descripcion{
+    width: 300px;
+}
+
+p{
+    font-size: 25px;
+}
+
+button{
+    border: 0cap;
+}
+
+h1{
+    padding-bottom: 15px;
+}
+
+.historial{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px  solid lightgray;
+    width: 800px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
